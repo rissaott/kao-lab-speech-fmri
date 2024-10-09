@@ -26,4 +26,5 @@ notes from friends
   - yoonji
   - melissa
   - sophie wasz
+  - jayson
   - kia
