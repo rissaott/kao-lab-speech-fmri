@@ -24,4 +24,6 @@ notes from friends
   - arushi
   - joseph
   - yoonji
+  - melissa
   - sophie wasz
+  - kia
