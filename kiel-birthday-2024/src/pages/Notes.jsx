@@ -15,9 +15,9 @@ const Notes = () => {
             <img src={pixelHeart} alt="Go Home" />
         </button>
         <h1>look at how many people love you!</h1>
-        <div className="cards-container">
+        <div className="note-cards-container">
             {notes.map((note, index) => (
-                <div className="card" key={index}>
+                <div className="note-card" key={index}>
                     <h2>{note.text}</h2>
                     <h2 style={{ color: 'darkblue' }}>- {note.name}</h2>
                 </div>
