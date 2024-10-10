@@ -14,7 +14,8 @@ const Notes = () => {
         <button className="home-button" onClick={handleGoHome}>
             <img src={pixelHeart} alt="Go Home" />
         </button>
-        <h1>look at how many people love you!</h1>
+        <h1>you are such a light in everyone's life.</h1>
+        <h2>don't believe me? here are some birthday wishes from your friends :)</h2>
         <div className="note-cards-container">
             {notes.map((note, index) => (
                 <div className="note-card" key={index}>
