@@ -20,11 +20,11 @@ const Photos = () => {
             <h1>Photos</h1>
             <div className="polaroid-container">
                 <div className="polaroid">
-                    <img src={seesaw} width={200} height={300} className="polaroid-image" alt="Seesaw" />
+                    <img src={seesaw} width={200} height={200} className="polaroid-image" alt="Seesaw" />
                     <div className="polaroid-text">Seesaw - Note 1</div>
                 </div>
                 <div className="polaroid">
-                    <img src={goingOut} width={200} height={300} className="polaroid-image" alt="Going Out" />
+                    <img src={goingOut} width={200} height={200} className="polaroid-image" alt="Going Out" />
                     <div className="polaroid-text">Going Out - Note 1</div>
                 </div>
                 <div className="polaroid">

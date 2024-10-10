@@ -109,7 +109,7 @@ h2 {
 
 .polaroid-image {
   width: 100%; /* Make the image fill the width */
-  height: auto; /* Maintain aspect ratio */
+  height: 200px; /* Maintain aspect ratio */
 }
 
 .polaroid-text {
