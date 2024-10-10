@@ -1,19 +1,33 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom'; // Make sure Link is imported
+import { Link } from 'react-router-dom';
 import pixelHeart from '../assets/pixel-heart.png';
 import '../App.css';
 
 const Home = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <h1>Happy Birthday Kiel!</h1>
-      <Link to="/notes"> {/* Wrap the image in a Link */}
-        <img src={pixelHeart} width={200} alt="Pixel Heart" />
-      </Link>
-    </>
-  );
+    return (
+        <>
+            <h1>Happy Birthday Kiel!</h1>
+            <div className="hearts-container">
+                <div className="heart">
+                    <Link to="/notes">
+                        <img src={pixelHeart} className="heart-image" alt="Pixel Heart" />
+                    </Link>
+                    <div className="heart-text">from friends</div>
+                </div>
+                <div className="heart">
+                    <Link to="/photos">
+                        <img src={pixelHeart} className="heart-image" alt="Pixel Heart" />
+                    </Link>
+                    <div className="heart-text">from me</div>
+                </div>
+                <div className="heart">
+                    <Link to="/things">
+                        <img src={pixelHeart} className="heart-image" alt="Pixel Heart" />
+                    </Link>
+                    <div className="heart-text">things</div>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Home;

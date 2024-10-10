@@ -19,7 +19,6 @@ h2 {
   color: black;
 }
 
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -56,20 +55,142 @@ h2 {
   color: #888;
 }
 
+
 .cards-container {
   display: flex;
-  flex-wrap: wrap; /* Allows the cards to wrap to the next line if needed */
-  justify-content: space-around; /* Evenly spaces the cards */
-  padding: 20px; /* Adds some padding around the container */
+  flex-wrap: wrap; /* Allows cards to wrap into multiple lines */
+  justify-content: center; /* Centers the cards */
 }
 
 .card {
-  background-color: #f9f9f9; /* Light background color for cards */
-  border: 1px solid #ccc; /* Light border */
+  background-color: #f9f9f9; /* Background color for cards */
+  border: 1px solid #ddd; /* Border for cards */
   border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Padding inside the card */
+  padding: 15px; /* Space inside the card */
   margin: 10px; /* Space between cards */
-  width: 200px; /* Set a fixed width for cards */
-  text-align: center; /* Center the text inside cards */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: inline-block; /* Allows cards to size based on content */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 0.9em; /* Smaller font size */
+  max-width: 90%; /* Prevents cards from being too wide */
+}
+
+
+
+.nav-button {
+  margin: 0 10px; /* Space between buttons and card */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(35, 35, 131); /* Button color */
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #1a05ff; /* Darker shade on hover */
+}
+
+.polaroid-container {
+  display: flex;
+  justify-content: center; /* Center the images */
+  margin-top: 20px; /* Space between title and images */
+  gap: 20px; /* Space between the polaroids */
+}
+
+.polaroid {
+  background-color: white; /* White background for the polaroid */
+  border: 10px solid white; /* Border around the polaroid */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 220px; /* Set the width of the polaroid */
+  text-align: center; /* Center text inside the polaroid */
+  position: relative; /* Positioning context for text */
+}
+
+.polaroid-image {
+  width: 100%; /* Make the image fill the width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.polaroid-text {
+  padding: 10px; /* Space around the text */
+  font-size: 14px; /* Adjust font size */
+  color: black;
+  font-family: Courier; /* Use a simple font */
+  background-color: white; /* Background color for the text area */
+  border-top: 2px solid #ccc; /* Optional: border above the text */
+}
+
+.hearts-container {
+  display: flex;
+  justify-content: center; /* Center the hearts */
+  margin-top: 20px; /* Space above hearts */
+}
+
+.heart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px; /* Space between hearts */
+  position: relative;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.heart-image {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  transition: transform 0.2s; /* Smooth transition for the image */
+}
+
+.heart-image:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.heart-text {
+  margin-top: 8px; /* Space between heart and text */
+  font-size: 16px; /* Adjust text size */
+  text-align: center; /* Center text */
+  font-family: Courier; /* Example of a cute font */
+  color: black;
+}
+
+.home-button {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none; /* Remove default focus outline */
+  overflow: hidden; /* Ensure overlay stays within button bounds */
+}
+
+.home-button img {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  transition: transform 0.2s; /* Smooth transition for the image */
+}
+
+.home-button:hover img {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.home-button:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Remove outline on active/focus states */
+.home-button:focus, 
+.home-button:active {
+  outline: none; /* Prevent outline on focus */
+  box-shadow: none; /* Prevent any box shadow */
+}
+
+.spotify-widget {
+  margin-top: 20px; /* Space above the widget */
+  text-align: center; /* Center the title and widget */
+}
+
+.spotify-widget iframe {
+  border-radius: 12px; /* Optional: Add some rounding to the iframe */
 }

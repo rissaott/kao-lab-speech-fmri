@@ -1,21 +1,25 @@
+import React from 'react';
 import '../App.css';
+import notes from './notesData'; // Adjust the path as needed
+import pixelHeart from '../assets/pixel-heart.png';
+
+const handleGoHome = () => {
+    // Add your logic to go back home, e.g., redirecting to a specific route
+    window.location.href = '/'; // Adjust this based on your routing
+};
 
 const Notes = () => {
-    const notes = [
-        "Note 1: Remember to buy milk.",
-        "Note 2: Finish the React project.",
-        "Note 3: Schedule dentist appointment.",
-        "Note 4: Call mom.",
-        "Note 5: Read a book.",
-    ];
-
     return (
         <>
-        <h1>notes</h1>
+        <button className="home-button" onClick={handleGoHome}>
+            <img src={pixelHeart} alt="Go Home" />
+        </button>
+        <h1>look at how many people love you!</h1>
         <div className="cards-container">
             {notes.map((note, index) => (
                 <div className="card" key={index}>
-                    <h2>{note}</h2>
+                    <h2>{note.text}</h2>
+                    <h2 style={{ color: 'darkblue' }}>- {note.name}</h2>
                 </div>
             ))}
         </div>
